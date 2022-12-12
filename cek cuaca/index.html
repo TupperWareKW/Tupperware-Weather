@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuaca</title>
+    <link rel="shortcut icon" href="image/weather-app.png" type="image/x-icon">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/cuaca.css">
+    <link rel="stylesheet" href="style/aboutUs.css">
+    <link rel="stylesheet" href="style/gempa.css">
+    <link rel="stylesheet" href="style/loadingAnimation.css">    
+</head>
+<body>
+    
+    <header>
+        <h1>Tupperware Weather</h1>
+        <div class="menu-button">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <!-- <div class="nav">
+            <span><a href="#Home" onclick="renderHomePage()">Home</a></span>
+            <span><a href="#Cuaca" id="cuaca" onclick="getCuaca('sumatera-utara', 'medan')">Cuaca</a></span>
+            <span><a href="#Gempa" id="gempa" onclick="getLatestEarthquake()">Gempa</a></span>
+            <span><a href="#About-us" id="about-us" onclick="renderAboutUs()">About Us</a></span>
+        </div> -->
+        <div class="nav">
+            <span><a href="#Home">Home</a></span>
+            <span><a href="#Cuaca" id="cuaca">Cuaca</a></span>
+            <span><a href="#Gempa" id="gempa">Gempa</a></span>
+            <span><a href="#About-us" id="about-us">About Us</a></span>
+        </div>
+        <button id="menu-button" aria-label="navigation-menu" style="display: none;">☰</button>
+    </header>
+
+    <main>
+        <div class="container-main">
+
+
+
+        </div>        
+    </main>    
+
+    <div class="loading-animation">
+        <div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>
+    </div>
+
+    <footer>
+        <p>&copy; 2022 Tupperware. All right reserved</p>
+    </footer>
+
+
+    <script src="fetchAPI.js" type="module"></script>
+    <script src="script.js" type="module"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+</html>

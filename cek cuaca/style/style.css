@@ -1,0 +1,224 @@
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+* {
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:active {
+    color: blue;
+}
+
+body {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    overflow-x: hidden !important;
+    /* width: 100vw; */
+}
+
+main {
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.menu-button {
+    display: none;
+}
+
+.menu-button div {
+    width: 28px;
+    height: 3px;
+    background-color: black;
+    margin: 6px 0;
+}
+
+header {
+    background-color: #f6f5f5;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    padding: 20px;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+}
+
+header .nav span{
+    margin-right: 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.nav a:visited {
+    color: blue;
+}
+
+.nav a:hover {
+    color: black;
+}
+
+/* main */
+
+#tupperware-cuaca {
+    margin: 100px auto 100px;
+    /* width: 80%; */
+    display: flex;
+    justify-content: center;
+}
+
+.main-image {
+    max-width: 260px;
+    margin-right: 5px;    
+    text-align: center;
+}
+
+.main-image img {
+    width: 100%;
+}
+
+.tupperware-desc {
+    margin-left: 20px;
+    max-width: 435px;
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+
+/* layanan */
+
+.layanan {
+    background-color: #f6f5f5;
+    text-align: center;
+    padding: 40px;
+}
+
+.text-layanan {
+    font-size: 1.6rem;
+}
+
+.container-layanan {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.cek-cuaca {
+    margin-right: 30px;
+}
+
+.cek-cuaca, .det-gempa {
+    width: 260px;
+    max-height: 305px;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 3px 3px 8px 1px rgb(0 0 0 / 20%);
+    cursor: pointer;
+}
+
+.container-image {
+    padding: 15px;
+}
+
+.cek-cuaca img, .det-gempa img {
+    width: 100%;
+}
+
+.text-info-layanan {
+    /* margin-top: 10px; */
+    padding-bottom: 10px;
+    background-color: rgb(0, 89, 255);
+    color: white;
+    font-size: .9rem;
+    transition: all .4s ease;
+}
+
+.text-info-layanan h2 {
+    padding: 8px;
+}
+
+.cek-cuaca:hover .text-info-layanan, .det-gempa:hover .text-info-layanan{
+    transform: translateY(-78px);
+}
+
+
+/* footer */
+footer {
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid rgb(165, 165, 165);
+    background-color: #fff;
+}
+
+
+/* responsive */
+@media screen and (max-width: 700px) {
+    header h1{
+        font-size: 1.5rem;
+    }
+
+    .menu-button {
+        display: block;
+    }
+
+    .nav {
+        position: absolute !important;
+        display: block;
+        background-color: #f6f5f5;        
+        width: 30vh;
+        text-align: center;
+        /* top: 72px; */
+        top: -400px;
+        right: 0;
+        /* right: -300px; */
+        box-shadow: 1px 1px 5px rgb(151, 151, 151);
+        transition: .5s all ease;
+        z-index: 999;
+    }
+
+    .open {
+        /* right: 0; */
+        top: 75px;
+        transition: .5s all ease    ;
+    }
+
+    .nav span {
+        display: block;
+        padding: 30px;
+        border-bottom: 1px solid white;
+        margin: 0 !important;
+    }
+
+    #tupperware-cuaca {
+        width: 95%;
+        flex-direction: column;
+        margin: 50px auto;
+    }
+
+    .main-image {
+        margin: 0 auto;
+        margin-bottom: 20px;        
+    }
+
+    .tupperware-desc {
+        text-align: justify;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .container-layanan {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .cek-cuaca, .det-gempa {
+        margin: 20px auto;
+    }
+}

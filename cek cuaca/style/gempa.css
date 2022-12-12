@@ -1,0 +1,116 @@
+.gempa-container {
+    height: 80vh;
+}
+
+.berita-gempa {
+    padding: 50px 30px;
+    display: flex;
+    flex-direction: row;
+}
+
+.gempa-terbaru h2 {
+    text-align: center;
+}
+
+.gempa-terbaru {
+    max-width: 600px;
+    /* min-width: 400px; */
+    /* flex-basis: 2; */
+}
+
+
+.container-gempa-terbaru img.main-image-latest {
+    width: 100%;
+}
+
+#waktu {
+    text-align: center;
+    font-weight: bold;
+}
+
+.container-gempa-terbaru table img {
+    width: 22px;
+}
+
+.container-gempa-terbaru table td {
+    width: fit-content;
+}
+
+
+
+.list-gempa {
+    padding: 0 20px;
+    max-width: 700px;
+}
+
+.list-gempa h2 {
+    /* padding: 20px; */
+    margin-bottom: 20px;
+}
+
+.list-gempa table {
+    max-height: 400px !important;
+    overflow: scroll;
+    border-collapse: collapse;
+}
+
+.list-gempa table td, .list-gempa table th {
+    padding: 5px;
+    
+}
+
+.list-gempa table tr {
+    border-bottom: 1px solid rgb(189, 189, 189);
+}
+
+.list-gempa table th {
+    background-color: rgb(241, 241, 241);
+}
+
+.list-gempa table tr:nth-child(odd) {    
+    background-color: rgb(255, 255, 255);
+}
+
+.list-gempa table tr:nth-child(even) {    
+    background-color: rgb(255, 255, 255);
+}
+
+
+/* responsive */
+
+@media screen and (max-width: 700px) {
+    .berita-gempa {
+        padding: 20px 10px;
+        flex-direction: column;
+        /* max-width: 100%;
+        overflow: hidden; */
+    }
+
+    .container-gempa-terbaru {
+        max-width: 100%;
+        /* overflow: hidden; */
+    }
+
+    .container-gempa-terbaru table {
+        width: 100%;
+    }
+
+
+    .berita-gempa hr {
+        margin: 20px 0;
+        display: none;
+    }
+
+    .list-gempa {
+        margin-top: 40px;
+    }
+
+    .list-gempa .container-table {
+        width: 100%;
+        overflow-x: scroll;
+    }
+
+    .list-gempa table{
+        width: 100% !important;
+    }
+}
